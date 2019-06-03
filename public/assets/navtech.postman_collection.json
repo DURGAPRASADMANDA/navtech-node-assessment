@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "99372c0f-6fc3-475f-8251-e4f9dd0f6088",
+		"name": "navtech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"durga\",\n\t\"firstName\": \"Durga Prasad\",\n\t\"lastName\": \"Manda\",\n\t\"password\": \"welcome\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order Insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImR1cmdhIiwiZmlyc3ROYW1lIjoiRHVyZ2EgUHJhc2FkIiwibGFzdE5hbWUiOiJNYW5kYSIsInV1aWQiOiIzZThkZGRjMC04NWNmLTExZTktYmYzNy1mMWVmNDI3YzhkMWIiLCJleHAiOjE1NTk1NDk2NzY1NzF9.as1r4VpHuI-oMnLMrZIG_ONXs8fEuJGV44_ZlNuxvUA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"orderDueDate\": \"05-06-2018\",\n    \"customerBuyerName\": \"Virat\",\n    \"customerAddress\": {\n        \"addressLine1\": \"#125, DEF Building\",\n        \"addressLine2\": \"Panjagutta\",\n        \"city\": \"Hyderabad\",\n        \"state\": \"Telangana\",\n        \"ZIP\": \"500003\",\n        \"country\": \"India\"\n    },\n    \"customerPhone\": \"1234567898\",\n    \"orderTotal\": 3\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImR1cmdhIiwiZmlyc3ROYW1lIjoiRHVyZ2EgUHJhc2FkIiwibGFzdE5hbWUiOiJNYW5kYSIsInV1aWQiOiIzZThkZGRjMC04NWNmLTExZTktYmYzNy1mMWVmNDI3YzhkMWIiLCJleHAiOjE1NTk1NDk2NzY1NzF9.as1r4VpHuI-oMnLMrZIG_ONXs8fEuJGV44_ZlNuxvUA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"orderDueDate\": \"05-06-2019\",\n    \"customerBuyerName\": \"Sachin\",\n    \"customerAddress\": {\n        \"addressLine1\": \"#125, DEF Building\",\n        \"addressLine2\": \"Ameerpet\",\n        \"city\": \"Hyderabad\",\n        \"state\": \"Telangana\",\n        \"ZIP\": \"500009\",\n        \"country\": \"India\"\n    },\n    \"customerPhone\": \"99999999\",\n    \"orderTotal\": 3\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/orders/ORDR-1559546094669",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"ORDR-1559546094669"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImR1cmdhIiwiZmlyc3ROYW1lIjoiRHVyZ2EgUHJhc2FkIiwibGFzdE5hbWUiOiJNYW5kYSIsInV1aWQiOiI2MGMzNTZkMC04NWRhLTExZTktYTM5Zi04YjA0YjY0ZjY0NzIiLCJleHAiOjE1NTk1NTQ0NTg0Mjl9.Dq7fgcyG1uvaNyGavV68fudKgIdAR6CNaYBU5cl4Htw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"orderDueDate\": \"05-06-2019\",\n    \"customerBuyerName\": \"Sachin\",\n    \"customerAddress\": {\n        \"addressLine1\": \"#125, DEF Building\",\n        \"addressLine2\": \"Ameerpet\",\n        \"city\": \"Hyderabad\",\n        \"state\": \"Telangana\",\n        \"ZIP\": \"500009\",\n        \"country\": \"India\"\n    },\n    \"customerPhone\": \"99999999\",\n    \"orderTotal\": 3\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/orders/ORDR-1559546094669",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders",
+						"ORDR-1559546094669"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orders Fetch",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmaXJzdE5hbWUiOiJEdXJnYSBQcmFzYWQiLCJsYXN0TmFtZSI6Ik1hbmRhIiwidXVpZCI6ImQ3MzQzMWIwLTg1Y2UtMTFlOS04ZDNkLWI1ODgwZTA5MDFkNiIsImV4cCI6MTU1OTU0OTUwMzE3Nn0.bdaoY0UDWctjZUtptiRfrnipyKKrPj6JR0GgzKTIZGM"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"durga\",\n\t\"password\": \"welcome\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
