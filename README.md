@@ -33,6 +33,7 @@ To get the Node server running locally:
 - [mongoose](https://github.com/Automattic/mongoose) - For modeling and mapping MongoDB data to javascript
 
 ## Application Structure
+
 - `bin/www` - Server start file consists create server and port defined
 - `app.js` - The entry point to our application. This file defines our express server and connects it to MongoDB using mongoose. It also requires the routes and models we'll be using in the application.
 - `common/enums/` - This file contains configuration/environment variables.
@@ -42,3 +43,6 @@ To get the Node server running locally:
 - `src/` - This folder contains User and Orders services(Router, Service and Controller).
 - `views/` - This folder contains pug to load html base page - to check server status.
 
+## Logging
+
+- Custom logger can be implemented
