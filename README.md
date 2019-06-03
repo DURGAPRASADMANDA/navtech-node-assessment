@@ -2,7 +2,12 @@
 Nav Tech Node JS Assessment
 
 This is Order Management System NODE Repo — with USER and ORDERS modules!
+# Use Authorization for all APIs except signup and login
 
+- To get Authorization token singup and login
+- After login, it gives you Authorization token
+- Pass this Authorization in headers for all order APIs
+- FYI - POSTMAN COLLECTION JSON in `public/assets` folder
 ---
 # Getting started
 
