@@ -14,6 +14,7 @@ This is Order Management System NODE Repo — with USER and ORDERS modules!
 To get the Node server running locally:
 
 - Clone this repo
+- `git clone https://github.com/DURGAPRASADMANDA/navtech-node-assessment.git`
 - Navigate to the root folder
 - Run `npm i` to install all required dependencies
 - Run `npm audit fix` if you find any vulnerabilities
